@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+body {
+  background-image: url('todo3.png');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  background-color: rgb(168, 201, 116);
+  min-height: 80vh;
+  width: 400px;
+  margin: 50px auto;
+  border-radius: 5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+h1{
+  color: rgb(26, 32, 90);
+  font-family: 'Dancing Script', cursive;
+}
+
+.container{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.crossed {
+  text-decoration: line-through 2px rgb(83, 1, 77);
+  background-color: #0976a8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li{
+  list-style-type: none;
+  padding: 5px;
+  font-family: 'Lobster', cursive;
+  color: rgb(26, 32, 90);
+  margin-right: 20px;
+  width: 85%;
+  border-radius: 5px;
+}
+
+input{
+  font-family: 'Lobster', cursive;
+  border-radius: 5px;
+  margin-top: 10px; 
+  
+}
+
+button{
+  font-family: 'Dancing Script', cursive;
+  width: 75%;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.add{
+  margin-top: 10px;
+  background-color: rgb(187, 255, 0);
+  color: rgb(14, 58, 3);
+  border: solid 2px rgb(14, 58, 3);
+}
+
+.delete{
+  margin-bottom: 10px;
+  background-color: brown;
+  color: rgb(44, 14, 8);
+  border: solid 2px rgb(44, 14, 8);
+}
+
+.bottom{
+  border-radius: 10px;
+  border: solid 2px rgb(102, 124, 67);
 }
